@@ -9,3 +9,5 @@ function practicante_theme_setup() {
 }
 
 add_action('after_setup_theme', 'practicante_theme_setup');
+
+require get_template_directory() . '/widget-cta.php';
