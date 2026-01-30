@@ -17,3 +17,16 @@ function practicante_register_widgets() {
 }
 
 add_action('widgets_init', 'practicante_register_widgets');
+
+function practicante_register_sidebars() {
+    register_sidebar([
+        'name'          => 'Sidebar Principal',
+        'id'            => 'main_sidebar',
+        'before_widget' => '<div class="widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>',
+    ]);
+}
+
+add_action('widgets_init', 'practicante_register_sidebars');

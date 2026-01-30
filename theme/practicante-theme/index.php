@@ -11,6 +11,10 @@
     <?php else : ?>
         <p>No hay contenido para mostrar.</p>
     <?php endif; ?>
+
+    <?php if (is_active_sidebar('main_sidebar')) : ?>
+        <?php dynamic_sidebar('main_sidebar'); ?>
+    <?php endif; ?>
 </main>
 
 <?php get_footer(); ?>
